@@ -1,0 +1,6 @@
+<div class="metadata">
+  <i class="fa fa-clock-o"></i>
+  <time datetime="{{ article.date.isoformat() }}" pubdate>{{ article.locale_date }}</time>
+  {% if article.tags %}<span class="tags"><i class="fa fa-tags"></i>
+{% for tag in article.tags %}<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last%}, {% endif %}{% endfor %}</span>{% endif %}
+</div>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="{{ HTML_LANG }}">
+<head>
+	<meta charset="utf-8"/>
+	<title>{% block title %}{%endblock%}</title>
+	<meta name="author" content="{{ AUTHOR }}">
+	
+	{% block extra_meta %}
+	{% endblock %}
+
+	<link rel="top" href="#" /><link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic,500,500italic,700' rel='stylesheet' type='text/css'></link><link href='http://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'></link>
+	<link rel="stylesheet" href="{{ SITEURL }}/theme/css/{{ CSS_FILE }}" type="text/css" />
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		
+	{% block scripts %}
+	{% endblock %}
+
+    {% if FEED_ALL_ATOM %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml" rel="alternate" title="{{ SITENAME }} Atom Feed" />
+    {% endif %}
+    {% if FEED_ALL_RSS %}
+    <link href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} RSS Feed" />
+    {% endif %}
+</head>
+	
+<body>
+{{ FEED_ATOM }}
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	      {% if FEED_ALL_ATOM %}
+	        <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="atom feed"/></a>
+	      {% endif %}
+          {% if FEED_ALL_RSS %}
+            <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate"><img src="/{{ THEME_STATIC_DIR }}/images/icons/feed-32px.png" alt="rss feed"/></a>
+          {% endif %}
+	    </div>
+	    {% if PAGES %}
+	      <nav class="pages">
+	        {% for p in PAGES %}
+			  <a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a>
+			  {% if not loop.last %}<span class=pageseparator><i class="fa fa-circle"></i></span>{% endif %}
+			{% endfor %}
+	      </nav>
+	    {% endif %}
+		<a href="{{ SITEURL }}" class="title">{{ SITENAME }}</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+		    {% block content %}{% endblock %}
+		  </div>	
+		  
+		  <div class="sidebar">
+            <aside>
+	          <h2><i class="fa fa-info fa-fw fa-border"></i> Blog author</h2>
+              <li>Thierry Carrez</li>
+              <li>Release manager for OpenStack</li>
+              <li>&nbsp;</li>
+              <li><a href="https://twitter.com/tcarrez" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @tcarrez</a></li>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+             </aside>
+                  {% for tag, poparticles in tags %}
+                  {% if tag == "Popular" %}<aside>
+              <h2><i class="fa fa-star fa-fw fa-border"></i> Popular articles</h2>
+                  {% for poparticle in poparticles %}
+                  <li><a href="{{ SITEURL }}/{{ poparticle.url }}">{{ poparticle.title }}</a></li>
+                  {% endfor %}</aside>
+                  {% endif %}
+                  {% endfor %}
+              <aside>
+              <h2><i class="fa fa-tags fa-fw fa-border"></i> Tags</h2>
+                  {% for tag, tagarticles in tags|sort %}
+                  {% if tag != "Popular" %}
+                  <li><a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a></li>
+                  {% endif %}
+                  {% endfor %}
+              </aside>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  © {{ AUTHOR }} - Proudly powered by <a href="https://www.python.org">Python</a> and <a href="http://getpelican.com">pelican</a>. Personal theme inspired from <a href="https://github.com/fle/pelican-simplegrey">pelican-simplegrey</a>.
+    	<br/>
+<span class="cc-icon"><img alt="Licence Creative Commons" src="{{ SITEURL }}/theme/images/cc.png" /></span>
+This site content is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+	  </footer>	
+
+	</div>
+	
+	{% if GOOGLE_ANALYTICS %}
+	  <script>
+		var _gaq=[['_setAccount','{{ GOOGLE_ANALYTICS }}'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	  </script>
+    {% endif %}
+
+</body>
+</html>
