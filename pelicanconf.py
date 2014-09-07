@@ -9,6 +9,10 @@ GOOGLE_ANALYTICS = 'UA-54541847-1'
 PATH = 'content'
 THEME = './theme'
 
+STATIC_PATHS = ['images', 'extra/CNAME', 'extra/keybase.txt']
+EXTRA_PATH_METADATA = { 'extra/CNAME': {'path': 'CNAME'},
+                        'extra/keybase.txt': {'path': 'keybase.txt'} }
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
