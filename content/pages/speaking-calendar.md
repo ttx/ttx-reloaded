@@ -6,7 +6,7 @@ Summary: Speaking calendar
 ### OpenStack France meetup (Paris, September 17)
 
 I'll be talking about cloud and the history of OpenStack at the OpenStack
-France September meetup at Mozilla France (more details soon).
+France September [meetup at Mozilla France](http://www.meetup.com/OpenStack-France/events/205983712/).
 
 
 ### OpenStack Summit (Paris, November 3-7)
