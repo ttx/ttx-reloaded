@@ -1,5 +1,5 @@
 Title: The next steps for Zaqar
-Date: 2014-09-17 10:30
+Date: 2014-09-17 15:00
 Author: Thierry Carrez
 Tags: OpenStack
 Slug: next-steps-for-zaqar
