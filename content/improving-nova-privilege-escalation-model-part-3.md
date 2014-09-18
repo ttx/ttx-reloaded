@@ -12,7 +12,7 @@ implementation]({filename}/improving-nova-privilege-escalation-model-part-2.md).
 In this last post, we'll discuss the advantages of a Python
 implementation and open discussion on how to secure it properly.
 
-#### Python implementation
+### Python implementation
 
 It's quite easy to implement the features that were mentioned in the
 previous post in Python. The main advantage of doing so is that the code
@@ -25,7 +25,7 @@ malicious code can be injected in the elevated rights process. This is
 why I'd like to present a model and open it for comments in the
 community.
 
-#### Proposed security model
+### Proposed security model
 
 The idea would be to have Nova code optionally use "sudo nova-rootwrap"
 instead of "sudo" as the *root\_helper.* A generic *sudoers* file would
@@ -44,7 +44,7 @@ env. If that's compromised, you're toasted the moment you "import sys"
 anyway. So using *sudo* to only allow */usr/bin/nova-rootwrap* and
 cleaning the environment should be enough. Or am I missing something ?
 
-#### Insecure mode ?
+### Insecure mode ?
 
 One thing we could do is check that *sys.path* all belongs to *root* and
 refuse to run in the case it's not. That would tell the user that his
@@ -54,7 +54,7 @@ convenience to detect insecure setups, not a security addition (the fact
 that it doesn't complain doesn't mean you're safe, it could mean you're
 already compromised).
 
-#### Test mode ?
+### Test mode ?
 
 For tests, it's convenient to allow to run code from branches. To allow
 this (unsafe) mode, you would tweak *sudoers* to allow it to run
@@ -64,7 +64,7 @@ in order to allow modules to be loaded from *\$BRANCH* (maybe requiring
 run from */usr/bin/nova-rootwrap* you can assume that */usr* is safe...
 Or should that idea be abandoned altogether ?
 
-#### Audit
+### Audit
 
 Nothing beats peer review when it comes to secure design. I call all
 Python module-loading experts and security white-hats out there: would

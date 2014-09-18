@@ -8,7 +8,7 @@ I've been asked multiple times why open source project management does
 not fully adopt agile methodologies, which are so great. Or what are the
 main differences between the two.
 
-#### Agile is good for you
+## Agile is good for you
 
 So first of all, I'd like to say that I think Agile methodologies are
 great. Their primary value to me is to allow software development groups
@@ -17,7 +17,7 @@ developers more in the center of game, they contribute to use *Autonomy*
 (one of the three main intrinsic motivators that Dan Pink mentions in
 his book *Drive*) as a way to maximize a development team productivity.
 
-#### Agile vs. Open
+## Agile vs. Open
 
 That said, applying pure Agile methods doesn't really work well for open
 source project management. Some great concepts can be reused, like
@@ -44,7 +44,7 @@ cycles are slightly longer than Agile sprints, to have a cadence that is
 more inclusive of development styles, and to enforce time to focus, as a
 group, on QA before a release.
 
-#### Agile devs in Open source
+## Agile devs in Open source
 
 It's difficult for Agile developers to abandon their nice tools and
 adopt seemingly-more-confusing open source bazaar ways. But in the end,
@@ -66,7 +66,7 @@ the very center of the game, even more than Agile does. You end up with
 the highest number of highly-motivated individuals, which in turn leads
 to lots of stuff getting done.
 
-#### Agile subteams
+## Agile subteams
 
 Finally, nothing prevents an open source project to have Agile
 development subgroups contributing to it. These subgroups can have user

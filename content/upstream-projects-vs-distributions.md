@@ -17,7 +17,7 @@ The relationship between upstream projects and distributions is always a
 bit difficult, because their roles overlap a bit. Since I'm sitting on
 both sides of the fence, let's try to find common ground.
 
-#### Overlapping roles
+### Overlapping roles
 
 In an ideal world, everyone would install software through distribution
 packages, and the roles wouldn't overlap. In the real world though,
@@ -30,7 +30,7 @@ sending them upstream immediately. Both want to provide bugfix updates
 to stable versions. In all cases the overlapping roles end up
 duplicating work and creating unnecessary friction.
 
-#### Splitting the roles
+### Splitting the roles
 
 In my (humble) opinion, upstream projects should encourage the use of
 packaged software wherever possible, rather than resisting it. They
@@ -60,7 +60,7 @@ in more distributions. I think time is better spent contacting
 distributions to get packaged rather than trying to improve the manual
 installation to the point where it is actually usable.
 
-#### Freshness
+### Freshness
 
 One case where you end up doing manual installations (even on supported
 distributions) is to get the latest released code running on
@@ -74,7 +74,7 @@ upstream releases (like PPAs in Ubuntu) and make them available for
 users of ﻿already-released distributions. Those are usually
 co-maintained between distributions and upstream projects.
 
-#### Reference distributions
+### Reference distributions
 
 At this point, it is worth taking collaboration one step further, and
 have developers that are involved in both projects ! Those can make sure

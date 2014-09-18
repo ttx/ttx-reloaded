@@ -7,7 +7,7 @@ Slug: the-6-dimensions-of-open-source
 Why do people choose to participate in Open Source ? It's always a mix
 of various reasons, so let's try to explore and classify them.
 
-### Technical
+## Technical
 
 The first dimension is technical. People like open source because
 looking directly in the code gives them the ability to **understand**
@@ -22,7 +22,7 @@ open-to-anyone Development Summits). Finally, they may be convinced,
 like I am, that open source software development methods result in
 better code **quality**.
 
-### Political
+## Political
 
 Next to the technical dimension, we have a political dimension, more
 precisely a *techno-political* dimension. People like Free software as a
@@ -32,7 +32,7 @@ reduce your rights and increase their revenue, so its more and more
 important that we are aware of those issues and fight back. Working on
 free and open source software is a way to contribute to that effort.
 
-### Philosophical
+## Philosophical
 
 Very close to the political dimension, we are now seeing philosophic
 interest in open source software. The 20th century saw the creation of a
@@ -44,7 +44,7 @@ producer and a consumer at the same time and be **associated** with
 technology rather than alienated by it. Open source is an early and
 highly successful manifestation of that.
 
-### Economical
+## Economical
 
 Back on the ground, there are strong and rational economic reasons for
 companies to opt to fund open source development. From most virtuous to
@@ -62,7 +62,7 @@ capitalist **honeypot**. They don't believe in it, they resist
 implementing what it takes to do it, but they like the money that
 pretending to do open source will bring them.
 
-### Social
+## Social
 
 A very important dimension of open source is the social dimension. Many
 people join open source projects to **belong** to a cool community that
@@ -77,7 +77,7 @@ professional experience. Finally, the sheer **ego-flattering** sensation
 you get by knowing that millions of people are using your work is
 definitely a powerful drive.
 
-### Ethical
+## Ethical
 
 The last dimension is ethical: the idea of directly contributing to the
 sum of the world's common knowledge is appealing. Working on open source

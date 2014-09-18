@@ -11,7 +11,7 @@ consider that it's because Linux distribution developers dislike Java
 and prefer other languages, like C or Python. The reality is slightly
 different.
 
-### Java is fine
+## Java is fine
 
 There is nothing sufficiently wrong with Java that would cause it to
 uniformly be a second-class citizen on every distro. It is a widely-used
@@ -20,7 +20,7 @@ source community. On servers, it generated very interesting stable
 (Tomcat) and cutting-edge (Hadoop, Cassandra...) projects. So what
 grudge do the distributions hold against Java ?
 
-### Distributing distributions
+## Distributing distributions
 
 The problem is that Java open source upstream projects do not really
 release code. Their main artifact is a complete binary distribution, a
@@ -45,9 +45,9 @@ they maintain their own platform of libraries. **They do, at their
 scale, the same work the Linux distributions do.** And that's where the
 real problem lies.
 
-### Solutions ?
+## Solutions ?
 
-##### Force software to use your libraries
+### Force software to use your libraries
 
 For simple Java software, stripping the upstream distribution and
 forcing it to use your platform libraries can work. But that creates
@@ -55,7 +55,7 @@ friction with upstream projects (since you introduce an untested
 difference). And that doesn't work with more complex software: swapping
 libraries below it will just make it fail.
 
-##### Package all versions of libraries
+### Package all versions of libraries
 
 The next obvious solution is to make separate packages for every version
 of library that the software uses. The problem is that there is no real
@@ -72,7 +72,7 @@ with a real library version anymore.
 approach is Gentoo, through the SLOT system that lets you have several
 versions of the same package installed at the same time.*
 
-##### Bundle software with their libraries
+### Bundle software with their libraries
 
 At that point, you accept code duplication, so just shipping the precise
 libraries together with the software doesn't sound that bad of an idea.
@@ -83,7 +83,7 @@ about the source code of the build dependencies of your libraries ? In
 some corner cases, the library project is even abandoned, and its source
 code lost...
 
-### What can we do to fix it ?
+## What can we do to fix it ?
 
 So you could say that the biggest issue the Linux distributions have
 with Java is not really about the language itself. It's about an
@@ -104,7 +104,7 @@ libraries inside your distro. A Java library wouldn't be shipped as a
 package anymore. But I think unified package systems are the glory of
 Linux distributions, so I don't really like that option.
 
-### Other issues, for reference
+## Other issues, for reference
 
 There are a few other issues I didn't mention in this article, to
 concentrate on the "distributing distributions" aspect. The tarball

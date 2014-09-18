@@ -14,7 +14,7 @@ to the strict necessary. Today we'll explain how the current model
 works, its limitations, and the groundwork already implemented during
 the Diablo cycle to improve that.
 
-#### Current model: sudo and sudoers
+### Current model: sudo and sudoers
 
 Currently, in a typical Nova deployment, the nodes run under an account
 with limited rights (usually called "nova"). When Nova needs to run a
@@ -24,7 +24,7 @@ contains all the commands that nova is allowed to run as root without
 providing a password. This is a privilege escalation security model
 which is pretty well-known and easy to audit.
 
-#### Limitations of the current model
+### Limitations of the current model
 
 That said, in the context of Nova, this model is very limited. The
 sudoers file does not allow to efficiently filter arguments, so you can
@@ -44,7 +44,7 @@ requires, for example. Those other limitations could be fixed while
 still using sudo and sudoers files, but the first limitation would
 remain. Can we do better ?
 
-#### Substitute a wrapper to sudo
+### Substitute a wrapper to sudo
 
 To be able to propose alternative privilege escalation security models,
 we first needed to be able to change all the "sudo" calls in the code

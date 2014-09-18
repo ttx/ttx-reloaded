@@ -11,9 +11,9 @@ one I worked on: a new, more configurable and extensible nova-rootwrap
 implementation. Here is what you should know about it, depending on
 whether you're a Nova user, packager or developer !
 
-#### Architecture
+## Architecture
 
-##### Purpose {#Purpose}
+### Purpose {#Purpose}
 
 The goal of the root wrapper is to allow the *nova* unprivileged user to
 run a number of actions as the *root* user, in the safest manner
@@ -25,7 +25,7 @@ complex filtering of parameters (advanced filters). The rootwrap was
 [designed]({filename}/improving-nova-privilege-escalation-model-part-1.md)
 to solve those issues.
 
-##### How rootwrap works {#How_rootwrap_works}
+### How rootwrap works {#How_rootwrap_works}
 
 Instead of just calling **sudo make me a sandwich**, Nova calls **sudo
 nova-rootwrap /etc/nova/rootwrap.conf make me a sandwich**. A generic
@@ -36,7 +36,7 @@ checks if the command requested by Nova matches one of those filters, in
 which case it executes the command (as *root*). If no filter matches, it
 denies the request.
 
-##### Security model {#Security_model}
+### Security model {#Security_model}
 
 The escalation path is fully controlled by the *root* user. A *sudoers*
 entry (owned by *root*) allows *nova* to run (as *root*) a specific
@@ -48,7 +48,7 @@ directories, which contain *root*-owned filters definition files. This
 chain ensures that the *nova* user itself is not in control of the
 configuration or modules used by the nova-rootwrap executable.
 
-#### Rootwrap for users: Nova configuration {#Rootwrap_for_users}
+## Rootwrap for users: Nova configuration {#Rootwrap_for_users}
 
 Nova must be configured to use nova-rootwrap as its *root\_helper*. You
 need to set the following in **nova.conf**:
@@ -59,9 +59,9 @@ The configuration file (and executable) used here must match the one
 defined in the *sudoers* entry (see below), otherwise the commands will
 be rejected !
 
-#### Rootwrap for packagers {#Rootwrap_for_packagers}
+## Rootwrap for packagers {#Rootwrap_for_packagers}
 
-##### Sudoers entry {#Sudoers_entry}
+### Sudoers entry {#Sudoers_entry}
 
 Packagers need to make sure that Nova nodes contain a *sudoers* entry
 that lets the *nova* user run nova-rootwrap as *root*, pointing to the
@@ -70,7 +70,7 @@ after that:
 
     nova ALL = (root) NOPASSWD: /usr/bin/nova-rootwrap /etc/nova/rootwrap.conf *
 
-##### Filters path {#Filters_path}
+### Filters path {#Filters_path}
 
 Nova looks for a *filters\_path* in **rootwrap.conf**, which contains
 the directories it should load filter definition files from. It is
@@ -84,7 +84,7 @@ from **/etc/nova/rootwrap.d**.
 Directories defined on this line should all exist, be owned and
 writeable only by the *root* user.
 
-##### Filter definitions {#Filter_definitions}
+### Filter definitions {#Filter_definitions}
 
 Finally, packaging needs to install, for each node, the filters
 definition file that corresponds to it. You should **not** install any
@@ -100,7 +100,7 @@ writeable only by the *root* user.
 All filter definition files can be found in Nova source code under
 etc/nova/rootwrap.d.
 
-#### Rootwrap for plug-in writers: adding new run-as-root commands {#Rootwrap_for_plug-in_writers}
+## Rootwrap for plug-in writers: adding new run-as-root commands {#Rootwrap_for_plug-in_writers}
 
 Plug-in writers may need to have the *nova* user run additional commands
 as *root*. They should use nova.utils.execute(run\_as\_root=True) to
@@ -113,9 +113,9 @@ example the foobar plugin could define its extra filters in a
 The format of the filter file is defined
 [here](http://wiki.openstack.org/Nova/Rootwrap#Reference).
 
-#### Rootwrap for core developers {#Rootwrap_for_core_developers}
+## Rootwrap for core developers {#Rootwrap_for_core_developers}
 
-##### Adding new run-as-root commands {#Adding_new_run-as-root_commands-1}
+### Adding new run-as-root commands {#Adding_new_run-as-root_commands-1}
 
 Core developers may need to have the *nova* user run additional commands
 as *root*. They should use nova.utils.execute(run\_as\_root=True) to
@@ -127,7 +127,7 @@ they should modify the etc/nova/rootwrap.d/network.filters file.
 The format of the filter file is defined
 [here](http://wiki.openstack.org/Nova/Rootwrap#Reference).
 
-##### Adding your own filter types {#Adding_your_own_filter_types}
+### Adding your own filter types {#Adding_your_own_filter_types}
 
 The default filter type, CommandFilter, is pretty basic. It only checks
 that the command name matches, it does not perform advanced checks on

@@ -40,7 +40,7 @@ something else. Pushing back the release for a week, a month or a year
 won't help OpenStack solidity if the focus doesn't switch. And if our
 focus switches, then there will be no need for a costly release delay.
 
-#### Acting now to make Essex a success
+### Acting now to make Essex a success
 
 During the Essex cycle, our Project Technical Leads have done their
 share of the work by using a very early milestone for their feature

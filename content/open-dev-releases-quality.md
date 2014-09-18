@@ -8,7 +8,7 @@ Every 6 months, as a cycle ends and we prepare the next, we look back at
 our release model and try to see how we can improve it. My opinion is
 that we need (once more) to evolve it, and here is why.
 
-#### Objectives and past evolutions
+## Objectives and past evolutions
 
 Our main objective is to produce stable and usable software. Our
 secondary objective is let stable new features reach the hands of our
@@ -48,7 +48,7 @@ So what's the solution ? Is there a good way to (at the same time)
 reduce the pain of "missing a release", have always-open development
 branches, and get higher quality ?
 
-#### The kernel model
+## The kernel model
 
 The only way to reduce the pain of missing a release is to have shorter
 time-based releases. The only way to have always-open development
@@ -78,7 +78,7 @@ timely manner. Development branches are always open. And with a
 reasonable amount of new code in every release, QA work is facilitated,
 theoretically resulting in higher release quality.
 
-#### Additional benefits
+## Additional benefits
 
 Splitting development into topics has an additional benefit: smaller
 groups developing an expertise on a specific area make better reviewers
@@ -96,7 +96,7 @@ geared towards performance improvements or stability, we could also
 define themes for every release -- after all the next one is not so far
 away.
 
-#### Challenges
+## Challenges
 
 There are a few issues with this model obviously. Code needs to be
 componentized enough so that merge pains can be limited. Changes from

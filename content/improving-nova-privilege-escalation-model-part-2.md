@@ -12,7 +12,7 @@ plug an alternative model (thanks to the *root\_helper* option), we'll
 discuss in this post what features this one should have. If you think we
 need more, please comment !
 
-#### Command filters
+### Command filters
 
 The most significant issue with the current model is that *sudoers*
 filters the executable used, but not the arguments. To fix that, our
@@ -32,7 +32,7 @@ user. The framework should allow developers to define their own
 *CommandFilter* subclasses, to be as precise as they want when filtering
 the most destructive commands.
 
-#### Running as
+### Running as
 
 In some cases, Nova runs, as *root*, commands that it should just run as
 a different user. For example, it runs *kill* with *root* rights to
@@ -41,13 +41,13 @@ doesn't really need to run *kill* with *root* rights at all. Filters
 should therefore also allow to specify a lower-privileged user a
 specific matching command should run under.
 
-#### Shipping filters in Nova code
+### Shipping filters in Nova code
 
 Filter lists should live within Nova code and be deployed by packaging,
 rather than live in packaging. That allows people adding a new escalated
 command to add the corresponding filter in the same commit.
 
-#### Limiting commands based on deployed nodes
+### Limiting commands based on deployed nodes
 
 As mentioned in the [previous
 post]({filename}/improving-nova-privilege-escalation-model-part-1.md),
@@ -61,7 +61,7 @@ deploy the *nova-compute* filters file only on *nova-compute* nodes, the
 effectively not being allowed any command as root. So this can be solved
 by smart packaging of filter files.
 
-#### Missing features ?
+### Missing features ?
 
 Those are the features that I found useful for our alternative privilege
 escalation model. If you see others, please comment here ! I'd like to
