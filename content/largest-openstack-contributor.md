@@ -23,8 +23,10 @@ Documentation, then SUSE leads. It's all pretty balanced and healthy.
 Rather than celebrating being #1, we should all celebrate the diversity of our
 community and our contributors. 132 different organizations were involved.
 6% of our code contributions come from individuals who are not affiliated
-with any company or organization. The Universidade Federal de Campina Grande
-is #25 in commits to OpenStack projects. B1 systems, a small German consulting
+with any company or organization. The
+[Universidade Federal de Campina Grande](http://www.ufcg.edu.br/)
+is #25 in commits to OpenStack projects.
+[B1 systems](https://www.b1-systems.de/), a small German consulting
 firm, is #8, mostly through the work of one person.
 
 Every little bit counts. It doesn't matter who is #1, it matters that we all
