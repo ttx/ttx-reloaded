@@ -9,8 +9,9 @@ I'm extremely excited by the coming OpenStack Summit week in Paris !
 First, well, Paris. It is a pretty amazing city, with great sights, museums and
 restaurants. Those who arrived early should have an awesome Saturday, sun all
 day, 18°C/65°F high. This is pretty rare in November, so we are very lucky !
-Then next week gets cold and wet, so we don't mind being stuck all day in
-windowless design summit rooms... Perfect!
+Then next week gets cold and wet, complete with a traditional transport
+strike on Tuesday, so we don't mind being stuck all day in windowless design
+summit rooms... Perfect!
 
 Second, this OpenStack Summit is completely sold out _days before_ the event.
 That means we managed to get to a critical mass of local/regional community.
