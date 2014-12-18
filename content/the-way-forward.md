@@ -178,4 +178,4 @@ working to solve, and to agree on a clear way forward to fix those.
 The next step now is to communicate more widely about the direction we are
 going, and start the discussion on some more difficult and less consensual
 details (like the exact set of objective rules applied to judge new entrants,
-or the need (and clear definition) for a compute-base tag.
+or the need - and clear definition for - a *compute-base* tag).
