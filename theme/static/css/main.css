@@ -74,17 +74,6 @@ header {
   padding: 0 0 0 10px;
 }
 
-@media screen and (max-width: 1000px) {
-  .sidebar {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 28%;
-    display: none;
-  }
-}
-
 footer {
   border-top: 1px dotted #D6D6D6;
   line-height: 80%;
