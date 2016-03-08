@@ -4,17 +4,21 @@ Authors: Thierry Carrez
 Summary: Speaking calendar
 
 
-### OpenStack Summit (Tokyo, October 27-30)
+### KubeCon (London, March 10-11)
 
-Doug Hellmann and myself will be presenting how OpenStack release management
-changes with the big tent. Find details about the talk
-[here](http://sched.co/4A0o) and register for the event
-[here](https://www.openstack.org/summit/tokyo-2015/).
+I'll be presenting how OpenStack stays relevant in a Kubernetes world at
+KubeCon in London. Find details about the talk
+[here](http://sched.co/6BYC) and register for the event
+[here](https://kubecon.io/). I'll also be
+participating in a panel about collaboration and the Kubernetes community.
 
 
-### Paris Open Source Summit (Paris, November 18-19)
+### OpenStack Summit (Austin, April 25-29)
 
-I'll be giving a keynote on Open Innovation at the first
-[Paris Open Source Summit](http://opensourcesummit.paris/), in the Society
-track. I'll also participate to the Community Summit with a talk about best
-project management practices.
+I'll give a [talk](https://www.openstack.org/summit/austin-2016/summit-schedule/events/8594)
+with Monty Taylor on the consequences and new challenges raised by the "Big
+Tent" governance in OpenStack, one year after its installment. I'll also
+introduce a [talk](https://www.openstack.org/summit/austin-2016/summit-schedule/events/7342)
+on changes needed to OpenStack to make it power massively distributed clouds
+(or edge clouds). You can register for the event
+[here](https://www.openstack.org/summit/austin-2016/).
