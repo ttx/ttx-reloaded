@@ -24,7 +24,7 @@ called the "Design Summit"). Making it more like a regular Summit event will
 help make it a neutral exchange forum between community peers (rather than
 dev kings listening to grievances in their throne hall).
 
-2. Projects teams were lacking time to work together as a team: building
+2. Project teams were lacking time to work together as a team: building
 trust, organizing the work, agreeing on priorities and assigning tasks. The
 current "Design Summit" doesn't work so well for that because it doubles as
 a general forum and a lot of people outside the team members were attending
