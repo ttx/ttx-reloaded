@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Thierry Carrez'
 SITENAME = u'ttx:reloaded'
-SITEURL = 'http://ttx.re'
+SITEURL = 'https://ttx.re'
 GOOGLE_ANALYTICS = 'UA-54541847-1'
 
 PATH = 'content'
