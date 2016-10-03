@@ -2,7 +2,7 @@ Title: What is the role of the OpenStack Technical Committee
 Date: 2016-10-03 12:45
 Author: Thierry Carrez
 Tags: OpenStack
-Slug: role-if-the-tc
+Slug: role-of-the-tc
 
 This week we are [renewing 6 seats](http://governance.openstack.org/election/)
 in the 13-member OpenStack Technical Committee. This election has attracted
