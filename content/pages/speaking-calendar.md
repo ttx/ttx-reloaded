@@ -4,16 +4,10 @@ Authors: Thierry Carrez
 Summary: Speaking calendar
 
 
-### OpenStack Summit (Barcelona, Oct 25-28)
+### SnowCamp (Grenoble, Feb 9-10)
 
-I'll give a [talk](https://www.openstack.org/summit/barcelona-2016/summit-schedule/events/15374/what-is-openstack-the-comprehensive-answer)
-in the 'Getting started' track at the OpenStack Summit in Barcelona, titled:
-"What is OpenStack, The comprehensive answer". You can register for the event
-[here](https://www.openstack.org/summit/barcelona-2016/).
+I'll give a [keynote talk](http://snowcamp.io/2017/fr/welcome)
+(in French) about OpenStack development process and project infrastructure at
+SnowCamp 2017 in Grenoble, France. You can register for the event
+[here](https://yurplan.com/event/Snow-Camp-2017/11544).
 
-
-### OpenStack Day France (Paris, Nov 22)
-
-I'll be giving a keynote talk at the OpenStack Day France event in Paris.
-It will be about what OpenStack really is. You can register for the
-event [here](https://openstackdayfrance.fr/).
