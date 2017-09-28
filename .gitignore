@@ -1,7 +1,4 @@
-Makefile
 /cache
-develop_server.sh
-fabfile.py
 /output
 *.pyc
-publishconf.py
+/.venv

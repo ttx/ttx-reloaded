@@ -1,0 +1,22 @@
+Add article
+===========
+
+cd $REPO
+source .venv/bin/activate
+vi content/foobar
+git add content/foobar
+git commit -a
+pelican
+cd output && python -m SimpleHTTPServer
+cd ..
+git push origin master
+
+Initial setup
+=============
+
+git clone $REPO
+cd $REPODIR
+virtualenv .venv
+source .venv/bin/activate
+pip install pelican
+pip install Markdown
