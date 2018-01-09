@@ -27,7 +27,7 @@ and mitigation patches for a long time.
 
 ## Why is it business as usual ?
 
-As [Bruce Schnieier](https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html)
+As [Bruce Schneier](https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html)
 says, "you can't secure what you don't understand". As we build more complex
 systems (in CPUs, in software, in policies), it is more difficult to build
 them securely, and they can fail in more subtle ways. There will always be
