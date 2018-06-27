@@ -7,7 +7,7 @@ Summary: About me
 
 Thierry Carrez is the VP of Engineering at the OpenStack Foundation,
 helping ensure the long-term health of the OpenStack upstream open source
-project. He has been the Release Manager for the OpenStack project since
+project. He has been a Release Manager for the OpenStack project since
 its inception, coordinating the effort and facilitating collaboration between
 contributors. He is an elected member of the OpenStack Technical Committee,
 which is in charge of the technical direction of the project.
