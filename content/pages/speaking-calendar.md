@@ -4,9 +4,12 @@ Authors: Thierry Carrez
 Summary: Speaking calendar
 
 
-### OpenStack Day Nordic (Oct 9-10, Stockholm)
+### Oπe\n conference (Mar 29-30, Athens)
 
-I'll be giving a [talk](https://openstackdaysnordic2018a.sched.com/event/G3r2?iframe=no)
-about open infrastructure and the new integration strategy of the OpenStack Foundation. You can register for the event
-[here](http://stockholm.openstacknordic.org/signup).
+I'll be giving a keynote talk at [Oπe\n](http://www.open-conf.gr/), a
+Technical Conference about Cloud and Python.
 
+### OpenInfra Days UK (Apr 1st, London)
+
+I'll be giving a keynote talk at the OpenInfra Days UK. You can
+register [here](https://www.eventbrite.com/e/openinfra-days-uk-2019-tickets-54916046373).
