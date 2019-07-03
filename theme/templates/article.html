@@ -2,12 +2,12 @@
 {% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
 
 {% block extra_meta %}
-	<meta name="description" content="{{ article.summary|striptags }}">
+	<meta name="description" content="{{ article.summary|striptags|e }}">
 
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:creator" content="@tcarrez">
 	<meta name="twitter:title" content="{{ article.title }}">
-	<meta name="twitter:description" content="{{ article.summary|striptags }}">
+	<meta name="twitter:description" content="{{ article.summary|striptags|e }}">
 	<meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
 	<meta name="twitter:image" content="https://ttx.re/images/ttx-re.jpg">
 {% endblock %}
