@@ -2,19 +2,14 @@
 {% block title %}{{ SITENAME }} - {{ article.title }}{% endblock %}
 
 {% block extra_meta %}
-
 	<meta name="description" content="{{ article.summary|striptags }}">
 
-{% if PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT %}
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:creator" content="@{{ PELICAN_SIMPLEGREY_TWITTER_CARD_ACCOUNT }}">
+	<meta name="twitter:creator" content="@tcarrez">
 	<meta name="twitter:title" content="{{ article.title }}">
 	<meta name="twitter:description" content="{{ article.summary|striptags }}">
 	<meta name="twitter:url" content="{{ SITEURL }}/{{ article.url }}">
-{% endif %}
-<meta property="og:type" content="article">
-<meta property="og:title" content="{{ article.title }}">
-<meta property="og:image" content="https://ttx.re/images/ttx-re.jpg">
+	<meta name="twitter:image" content="https://ttx.re/images/ttx-re.jpg">
 {% endblock %}
 
 
