@@ -138,5 +138,6 @@ All those benefits explain why open source software is so successful today.
 Those unique benefits ultimately make a superior product, one that is a smart
 choice for users. It is also a balancing force that drives good hygiene to
 wider ecosystems, which is why I would go so far as saying it is necessary
-in today's world. Next week in part 2, we'll see why today, while being
-necessary, open source is no longer sufficient.
+in today's world. In [part 2](https://ttx.re/open-source-2019-part2.html)
+we'll see why today, while being necessary, open source is no longer
+sufficient.

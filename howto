@@ -7,8 +7,7 @@ vi content/foobar
 git add content/foobar
 git commit -a
 pelican
-cd output && python -m SimpleHTTPServer
-cd ..
+cd output && python -m SimpleHTTPServer; cd ..
 git push origin master
 
 Initial setup
