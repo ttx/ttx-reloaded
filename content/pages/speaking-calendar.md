@@ -4,7 +4,12 @@ Authors: Thierry Carrez
 Summary: Speaking calendar
 
 
-### OpenInfra Days Korea (July 18, Seoul)
+### Paris Open Source Summit (December 10-11, Paris)
 
-I'll be giving a talk on Open Infrastructure at the OpenInfra Days Korea.
-You can register [here](https://festa.io/events/352)
+I'll be speaking on three topics at
+[Paris Open Source Summit](https://www.opensourcesummit.paris/): one talk on
+why you should adopt open infrastructure today (Wednesday at 10am) in the
+Infrastructure track, another talk about open source under attack (Tuesday
+at 2:20pm) in the Community Summit track, and one panel around the neutrality
+of collaboration spaces in the Governance track (Wednesday at 11am).
+You can register [here](https://visitor.weyou-group.com/poss/2019/inscription).
