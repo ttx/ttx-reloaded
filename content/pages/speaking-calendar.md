@@ -4,12 +4,10 @@ Authors: Thierry Carrez
 Summary: Speaking calendar
 
 
-### Paris Open Source Summit (December 10-11, Paris)
+### FOSDEM (February 1-2, Brussels)
 
-I'll be speaking on three topics at
-[Paris Open Source Summit](https://www.opensourcesummit.paris/): one talk on
-why you should adopt open infrastructure today (Wednesday at 10am) in the
-Infrastructure track, another talk about open source under attack (Tuesday
-at 2:20pm) in the Community Summit track, and one panel around the neutrality
-of collaboration spaces in the Governance track (Wednesday at 11am).
-You can register [here](https://visitor.weyou-group.com/poss/2019/inscription).
+I'll be delivering a talk on
+[why open infrastructure matters](https://fosdem.org/2020/schedule/event/open_infrastructure/)
+in the Janson auditorium as part of the Freedom main track! I'll also be
+speaking in the Containers devroom about
+[demystifying container runtimes](https://fosdem.org/2020/schedule/event/containers_k8s_runtimes/). As usual at FOSDEM, no registration necessary.
